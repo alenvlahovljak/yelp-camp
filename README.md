@@ -39,7 +39,6 @@ Create a .env file (or just export manually in the terminal) in the root of the 
 
 ```
 DATABASEURL='<url>'
-API_KEY=''<key>
 API_SECRET='<secret>'
 ```
 
