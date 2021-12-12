@@ -117,7 +117,7 @@ app.use(
               "'self'",
               "blob:",
               "data:",
-              "https://res.cloudinary.com/dmvgmogaf/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
+              "https://res.cloudinary.com/dmvgmogaf/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
               "https://images.unsplash.com/",
           ],
           fontSrc: ["'self'", ...fontSrcUrls],
@@ -158,8 +158,8 @@ app.use((err, req, res, next) => {
     if (!err.message) err.message = 'Oh no, something wet wrong!'
     res.status(statusCode).render('error', { err })
 });
- 
-const port = process.env.PORT || 3000;
+
+const port = process.env.PORT || 8081;
 app.listen(port, () => {
   console.log(`Serving on  port ${port}`)
 });
