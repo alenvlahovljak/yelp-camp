@@ -117,7 +117,7 @@ app.use(
               "'self'",
               "blob:",
               "data:",
-              "https://res.cloudinary.com/dmvgmogaf/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
+              process.env.AWS_S3_URL,
               "https://images.unsplash.com/",
           ],
           fontSrc: ["'self'", ...fontSrcUrls],
