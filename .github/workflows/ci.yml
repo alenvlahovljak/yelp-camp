@@ -45,6 +45,3 @@ jobs:
         if: |
           steps.cache-yarn-cache.outputs.cache-hit != 'true' ||
           steps.cache-node-modules.outputs.cache-hit != 'true'
-
-      - name: Start Express.js server
-        run: yarn start
